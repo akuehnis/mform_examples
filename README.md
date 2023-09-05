@@ -1,6 +1,6 @@
 ﻿# Beispield für Redaxo Plugin MForm Version 7
 
- ## Redactor-Editor
+ ## Editor (Redactor)
  Input
  ```
 <?php 
@@ -15,6 +15,24 @@ echo $mform->show();
 Output
 ```
 REX_VALUE[id="1" output="html"]
+```
+
+## Bilder-Auswahl
+
+Input 
+
+```
+<?php
+$mform = MForm::factory();
+$mform->addImagelistField(1, ['label' => 'Bilder']);
+echo $mform->show();
+?>
+``` 
+
+Output
+
+```
+dump('REX_MEDIALIST[id=2]');
 ```
 
 
