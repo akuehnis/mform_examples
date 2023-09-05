@@ -1,5 +1,23 @@
 ﻿# Beispield für Redaxo Plugin MForm Version 7
 
+ ## Redactor-Editor
+ Input
+ ```
+<?php 
+$mform = Mform::factory();
+$mform->addTextareaField(1, [
+    'label' => 'Inhalt',
+    'class' => 'form-control redactor-editor--full']);
+echo $mform->show();
+?>
+```
+
+Output
+```
+REX_VALUE[id="1" output="html"]
+```
+
+
  ## Interne Weiterleitung
 
  Input
